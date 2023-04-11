@@ -7,6 +7,7 @@
     "access": "public"
   },
   "scripts": {
+    "prepare": "npm run build",
     "build": "make build",
     "i18n_extract": "BABEL_ENV=i18n fedx-scripts babel src --quiet > /dev/null",
     "lint": "fedx-scripts eslint --ext .js --ext .jsx .",
