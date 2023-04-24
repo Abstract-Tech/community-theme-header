@@ -1,6 +1,6 @@
 {
   "name": "@abstract-tech/community-theme-header",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The standard header for Open edX",
   "main": "dist/index.js",
   "publishConfig": {
