@@ -1,5 +1,5 @@
 {
-  "name": "@edx/frontend-component-header",
+  "name": "@abstract-tech/community-theme-header",
   "version": "1.0.0-semantically-released",
   "description": "The standard header for Open edX",
   "main": "dist/index.js",
