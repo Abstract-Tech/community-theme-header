@@ -35,7 +35,6 @@
   },
   "homepage": "https://github.com/Abstract-Tech/community-theme-header#readme",
   "devDependencies": {
-    "@edx/brand": "npm:@edx/brand-openedx@1.2.0",
     "@edx/browserslist-config": "^1.1.1",
     "@edx/frontend-build": "^12.4.19",
     "@edx/frontend-platform": "^4.0.0",
@@ -69,7 +68,7 @@
     "react-transition-group": "4.4.5"
   },
   "peerDependencies": {
-    "@edx/frontend-platform": "^3.3.1",
+    "@edx/frontend-platform": "^4.0.0",
     "prop-types": "15.8.1",
     "react": "16.14.0",
     "react-dom": "16.14.0"
