@@ -1,12 +1,14 @@
 {
   "name": "@edx/frontend-component-header",
-  "version": "1.0.0-semantically-released",
+  "version": "1.0.0",
+  "private": true,
   "description": "The standard header for Open edX",
   "main": "dist/index.js",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
+    "prepare": "npm run build",
     "build": "make build",
     "i18n_extract": "BABEL_ENV=i18n fedx-scripts babel src --quiet > /dev/null",
     "lint": "fedx-scripts eslint --ext .js --ext .jsx .",
@@ -24,23 +26,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/openedx/frontend-component-header.git"
+    "url": "git+https://github.com/Abstract-Tech/community-theme-header.git"
   },
   "author": "edX",
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/openedx/frontend-component-header/issues"
+    "url": "https://github.com/Abstract-Tech/community-theme-header/issues"
   },
-  "homepage": "https://github.com/openedx/frontend-component-header#readme",
+  "homepage": "https://github.com/Abstract-Tech/community-theme-header#readme",
   "devDependencies": {
-    "@edx/brand": "npm:@edx/brand-openedx@1.2.0",
     "@edx/browserslist-config": "^1.1.1",
-    "@edx/frontend-build": "^12.4.19",
-    "@edx/frontend-platform": "^3.0.1",
+    "@edx/frontend-build": "12.8.16",
+    "@edx/frontend-platform": "4.2.0",
     "@edx/reactifex": "^2.1.1",
-    "@testing-library/dom": "9.0.1",
+    "@testing-library/dom": "9.2.0",
     "@testing-library/jest-dom": "5.16.5",
-    "@testing-library/react": "10.4.9",
+    "@testing-library/react": "12.1.5",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.7",
     "husky": "8.0.3",
@@ -56,7 +57,7 @@
     "redux-saga": "1.2.3"
   },
   "dependencies": {
-    "@edx/paragon": "20.28.5",
+    "@edx/paragon": "20.32.3",
     "@fortawesome/fontawesome-svg-core": "6.3.0",
     "@fortawesome/free-brands-svg-icons": "6.3.0",
     "@fortawesome/free-regular-svg-icons": "6.3.0",
@@ -67,9 +68,9 @@
     "react-transition-group": "4.4.5"
   },
   "peerDependencies": {
-    "@edx/frontend-platform": "^2.0.0 || ^3.0.0",
+    "@edx/frontend-platform": "^4.0.0",
     "prop-types": "^15.5.10",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react": "^16.9.0 || ^17.0.0",
+    "react-dom": "^16.9.0 || ^17.0.0"
   }
 }
