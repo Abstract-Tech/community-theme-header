@@ -6,6 +6,11 @@ const messages = defineMessages({
     defaultMessage: 'Courses',
     description: 'Link to the learner course dashboard',
   },
+  'header.links.contact': {
+    id: 'header.links.contact',
+    defaultMessage: 'Contact',
+    description: 'Link to the contact',
+  },
   'header.links.programs': {
     id: 'header.links.programs',
     defaultMessage: 'Programs',
@@ -25,6 +30,11 @@ const messages = defineMessages({
     id: 'header.user.menu.dashboard',
     defaultMessage: 'Dashboard',
     description: 'Link to the user dashboard',
+  },
+  'header.user.menu.contact': {
+    id: 'header.user.menu.dashboard',
+    defaultMessage: 'Contact',
+    description: 'Link to the contact',
   },
   'header.user.menu.profile': {
     id: 'header.user.menu.profile',

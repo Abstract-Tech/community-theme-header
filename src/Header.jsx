@@ -39,6 +39,11 @@ const Header = ({ intl }) => {
       href: `${config.LMS_BASE_URL}/dashboard`,
       content: intl.formatMessage(messages['header.links.courses']),
     },
+    {
+      type: 'item',
+      href: `${config.LMS_BASE_URL}/contact`,
+      content: intl.formatMessage(messages['header.links.contact']),
+    },
   ];
 
   const orderHistoryItem = {
@@ -52,6 +57,11 @@ const Header = ({ intl }) => {
       type: 'item',
       href: `${config.LMS_BASE_URL}/dashboard`,
       content: intl.formatMessage(messages['header.user.menu.dashboard']),
+    },
+    {
+      type: 'item',
+      href: `${config.LMS_BASE_URL}/contact`,
+      content: intl.formatMessage(messages['header.user.menu.contact']),
     },
     {
       type: 'item',
