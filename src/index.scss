@@ -94,13 +94,6 @@ $white: #fff;
       font-weight: 500;
       letter-spacing: .01em;
     }
-    .nav-link:hover,
-    .nav-link:focus,
-    .nav-link.active,
-    .expanded .nav-link {
-      background: $component-active-bg;
-      color: $component-active-color;
-    }
     .menu {
       position: static;
       .menu-content {
