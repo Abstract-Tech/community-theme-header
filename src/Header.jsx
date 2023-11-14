@@ -68,6 +68,12 @@ const Header = ({ intl }) => {
       href: config.LOGOUT_URL,
       content: intl.formatMessage(messages['header.user.menu.logout']),
     },
+    {
+      type: 'item',
+      href: `${config.LMS_BASE_URL}/contact`,
+      content: intl.formatMessage(messages['header.links.contact']),
+    },
+
   ];
 
   // Users should only see Order History if have a ORDER_HISTORY_URL define in the environment.
@@ -86,6 +92,12 @@ const Header = ({ intl }) => {
       href: `${config.LMS_BASE_URL}/register`,
       content: intl.formatMessage(messages['header.user.menu.register']),
     },
+    {
+      type: 'item',
+      href: `${config.LMS_BASE_URL}/contact`,
+      content: intl.formatMessage(messages['header.links.contact']),
+    },
+
   ];
 
   const props = {

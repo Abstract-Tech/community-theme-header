@@ -1,6 +1,11 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
 
 const messages = defineMessages({
+  'header.links.contact': {
+    id: 'header.links.contact',
+    defaultMessage: 'Contact',
+    description: 'Link to the contact',
+  },
   'header.links.courses': {
     id: 'header.links.courses',
     defaultMessage: 'Courses',
