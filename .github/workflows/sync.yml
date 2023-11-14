@@ -1,0 +1,23 @@
+name: Sync with private repo
+
+on:
+  push:
+    branches: [ community-theme.palm ]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Sync to GitLab
+        run: |
+          mkdir -p ~/.ssh && chmod 700 ~/.ssh
+          eval $(ssh-agent -s)
+          echo "${{ secrets.GITLAB_KNOWN_HOSTS }}" > ~/.ssh/known_hosts && chmod 644 ~/.ssh/known_hosts
+          echo "${{ secrets.COMMUNITY_THEME_SSH_PRIVATE_KEY }}" | ssh-add -
+          git remote add gitlab $GITLAB_REPOSITORY
+          git push gitlab $GITHUB_REF
+        env:
+          GITLAB_REPOSITORY: git@gitlab.com:abstract-germany/community-theme/community-theme-header.git
