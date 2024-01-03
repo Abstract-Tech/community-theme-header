@@ -37,7 +37,7 @@
     "@edx/brand": "npm:@edx/brand-openedx@1.2.0",
     "@edx/browserslist-config": "^1.2.0",
     "@edx/frontend-build": "13.0.8",
-    "@edx/frontend-platform": "6.1.1",
+    "@edx/frontend-platform": "^5.0.0",
     "@edx/reactifex": "2.2.0",
     "@testing-library/dom": "9.3.3",
     "@testing-library/jest-dom": "5.17.0",
@@ -69,7 +69,7 @@
     "react-transition-group": "4.4.5"
   },
   "peerDependencies": {
-    "@edx/frontend-platform": "6.1.1",
+    "@edx/frontend-platform": "^4.0.0 || ^5.0.0",
     "prop-types": "15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
